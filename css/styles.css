@@ -3,3 +3,15 @@
 	--orange-web: #ffaa0aff;
 	--tekhelet: #543686ff;
 }
+
+body{
+    background-color: var(--russian-violet);
+}
+
+.intro-page{
+    background-color: var(--orange-web);
+}
+
+.game-page{
+    background-color: var(--orange-web);
+}
