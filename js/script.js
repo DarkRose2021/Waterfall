@@ -1,0 +1,7 @@
+function hideDivs(){
+
+};
+
+function showDivs(){
+    
+}
