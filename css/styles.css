@@ -15,7 +15,7 @@ body{
     flex-direction: column;
 }
 
-.intro-page{
+.introduction{
     background-color: var(--orange-web);
     width:50%;
 }
