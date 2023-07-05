@@ -6,12 +6,21 @@
 
 body{
     background-color: var(--russian-violet);
+    display: flex;
+    justify-content: center;
+}
+
+.page-layout{
+    display: flex;
+    flex-direction: column;
 }
 
 .intro-page{
     background-color: var(--orange-web);
+    width:50%;
 }
 
 .game-page{
     background-color: var(--orange-web);
+    width:50%;
 }
