@@ -16,26 +16,28 @@
             </p>
         </div>
         <div class="btn">
-            <button>Start Game</button>
+            <button id="startBtn">Start Game</button>  //click this and shows the game page 
         </div>
     </div>
 
     <div class="game-page">
         <div class="form">
             <form>
-                <label name="p1-name">Player One Name: </label>
-                <input for="p1-name" type="text"><br />
+                <label name="p1Name">Player One Name: </label>
+                <input required for="p1Name" type="text"><br />
 
-                <label>Player Two Name: </label>
-                <input type="text"><br />
+                <label name="p2Name">Player Two Name: </label>
+                <input required for="p2Name"  type="text"><br />
 
-                <button type="submit">Easy</button>
-                <button type="submit">Medium</button>
-                <button type="submit">Hard</button>
+                <button id="easyBtn" type="submit">Easy</button>
+                <button id="medBtn" type="submit">Medium</button>
+                <button id="hardBtn" type="submit">Hard</button>
+
+                <button id="playBtn" type="submit">Play</button>
             </form>
         </div>
         <h2 class="player-turn"></h2>
-        <div class="match imgs">
+        <div class="match imgs"> //Game board?
 
         </div>
         <div class="turn-btns">
