@@ -11,6 +11,12 @@ document.getElementById("startBtn").addEventListener("click", function() {
     }
   });
   
+}
+
+
+///get rid of instructions when clicking the start buttob
+
+
 function game(){
 
 }
