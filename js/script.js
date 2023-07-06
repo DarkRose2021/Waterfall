@@ -3,7 +3,7 @@ function hideDivs(){
 };
 
 function showDivs(){
-    var div = document.getElementById('game-page' || 'intro-page');
+    var div = document.getElementById('game-page' || 'instructions');
     if (div.style.display === 'none') {
       div.style.display = 'block';
     } else {
