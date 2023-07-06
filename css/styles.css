@@ -2,25 +2,32 @@
 	--russian-violet: #27004fff;
 	--orange-web: #ffaa0aff;
 	--tekhelet: #543686ff;
+
+	/* new color palette? */
+	--english-violet: #44355bff;
+	--dark-purple: #31263eff;
+	--raisin-black: #221e22ff;
+	--hunyadi-yellow: #eca72cff;
+	--flame: #ee5622ff;
 }
 
-body{
-    background-color: var(--russian-violet);
-    display: flex;
-    justify-content: center;
+body {
+	background-color: var(--russian-violet);
+	display: flex;
+	justify-content: center;
 }
 
-.page-layout{
-    display: flex;
-    flex-direction: column;
+.page-layout {
+	display: flex;
+	flex-direction: column;
 }
 
-.instructions{
-    background-color: var(--orange-web);
-    width:50%;
+.instructions {
+	background-color: var(--orange-web);
+	width: 50%;
 }
 
-.game-page{
-    background-color: var(--orange-web);
-    width:50%;
+.game-page {
+	background-color: var(--orange-web);
+	width: 50%;
 }
