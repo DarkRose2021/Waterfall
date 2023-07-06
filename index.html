@@ -2,7 +2,7 @@
 <head>
     <title></title>
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="js/script.js" defer></script>
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
@@ -16,11 +16,11 @@
                 </p>
             </div>
             <div class="btn">
-                <button id="startBtn">Start Game</button>  //click this and shows the game page 
+                <button id="startBtn" onclick="showDivs()">Start Game</button>  //click this and shows the game page 
             </div>
         </div>
     
-        <div class="game-page">
+        <div class="game-page" style="display: none;">
             <div class="form">
                 <form>
                     <label name="p1Name">Player One Name: </label>
@@ -54,7 +54,7 @@
             </div>
         </div>
     
-        <div class="end-txt">
+        <div class="end-txt" style="display: none;">
     
         </div>
     </div>
