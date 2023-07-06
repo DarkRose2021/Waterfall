@@ -10,11 +10,6 @@ document.getElementById("startBtn").addEventListener("click", function() {
       div2.style.display = "block";
     }
   });
-  
-}
-
-
-///get rid of instructions when clicking the start buttob
 
 
 function game(){
