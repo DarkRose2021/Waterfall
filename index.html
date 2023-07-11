@@ -1,131 +1,125 @@
 <!DOCTYPE html>
 <head>
-    <title></title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Butcherman&family=Lacquer&display=swap" rel="stylesheet">
+	<title></title>
+	<link rel="stylesheet" href="./css/styles.css" />
+	<script src="./js/script.js" defer></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Butcherman&family=Lacquer&display=swap"
+		rel="stylesheet"
+	/>
 </head>
 
 <body>
-    <div class="page-layout">
-        <div id="instructions" >
-            <div class="txt">
-                <h1>Welcome to Nim!</h1>
-    
-                <p>Two players take turns taking pieces from a row, they can take more than one but it must be from the same row. They are allowed to clear a heap but once it is emptied you must end your turn. If there is one left for the other player to take then they lose. 
-                    
-                </p>
-            </div>
-            <div class="btn">
-                <button id="startBtn">Start Game</button>
-            </div>
-        </div>
-    
-        <div id="game-page">
-            <div class="form">
-                <form>
-                    <div class="mode-buttons">
-                        <button id="easyBtn">Easy</button>
-                        <button id="mediumBtn">Medium</button>
-                        <button id="hardBtn">Hard</button>
-                    </div>
-                </form>
-            </div>
-            <h2 class="player-turn"></h2>
-            <div class="gameBoard"> 
-                <div class="easy">
+	<div class="page-layout">
+		<div id="instructions">
+			<div class="txt">
+				<h1>Welcome to Nim!</h1>
 
-                    <div class="board easy">
-                        <div class="pile" id="pile1_e">
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                        </div>
-                        <div class="pile" id="pile2_e">
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                        </div>
-                        <div class="pile" id="pile3_e">
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                        </div>
-                      </div>
-                      
-                      <div class="board medium">
-                        <div class="pile" id="pile4_m">
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                        </div>
-                        <div class="pile" id="pile5_m">
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                        </div>
-                        <div class="pile" id="pile6_m">
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                        </div>
-                      </div>
-                      
-                      <div class="board hard">
-                        <div class="pile" id="pile7_h">
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                        </div>
-                        <div class="pile" id="pile8_h">
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                        </div>
-                        <div class="pile" id="pile9_h">
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                          <div></div>
-                        </div>
-                      </div>
-    
-                </div>
-    
-                <div class="med">
-    
-                </div>
-                <div class="hard">
-    
-                </div>
-            </div>
-            <div class="turn-btns">
-                <button>End Turn</button>
-            </div>
-        </div>
-    
-        <div class="end-txt" style="display: none;">
-    
-        </div>
-    </div>
+				<p>
+					Two players take turns taking pieces from a row, they can take more
+					than one but it must be from the same row. They are allowed to clear a
+					heap but once it is emptied you must end your turn. If there is one
+					left for the other player to take then they lose.
+				</p>
+			</div>
+			<div class="btn">
+				<button id="startBtn">Start Game</button>
+			</div>
+		</div>
 
+		<div id="game-page">
+			<div class="form">
+				<form>
+					<div class="mode-buttons">
+						<button id="easyBtn">Easy</button>
+						<button id="mediumBtn">Medium</button>
+						<button id="hardBtn">Hard</button>
+					</div>
+				</form>
+			</div>
+			<h2 class="player-turn"></h2>
+			<div class="gameBoard">
+				<div class="easy">
+					<div class="board easy">
+						<div class="pile" id="pile1_e">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<div class="pile" id="pile2_e">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<div class="pile" id="pile3_e">
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+
+					<div class="board medium">
+						<div class="pile" id="pile4_m">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<div class="pile" id="pile5_m">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<div class="pile" id="pile6_m">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+
+					<div class="board hard">
+						<div class="pile" id="pile7_h">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<div class="pile" id="pile8_h">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<div class="pile" id="pile9_h">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="med"></div>
+				<div class="hard"></div>
+			</div>
+			<div class="turn-btns">
+				<button>End Turn</button>
+			</div>
+		</div>
+
+		<div class="end-txt" style="display: none"></div>
+	</div>
 </body>
-
-
-
