@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
       board.style.display = "none";
     }
     document.querySelector(".board.easy").style.display = "flex";
-    resetGame();
+   resetGame();
   });
   
   mediumBtn.addEventListener("click", function() {
