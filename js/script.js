@@ -18,6 +18,14 @@ const piles = {
   pile9_h: 6
 };
 
+//when you click the start button the first time the name and difficulty form should pop up. 
+//if the names field and difficult have been field then show the game board 
+//else pop up saying to enter the information. 
+
+
+
+//once the game board is visible make it possible for the player to take pieces. when they click end turn switch over to the other players turn with the selected pieces gone from the board
+
 const initialPiles = { ...piles }; // Store the initial pile values
 
 let currentPlayer = 1;
