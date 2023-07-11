@@ -46,7 +46,7 @@ function removeObjects(pileId, count) {
 					"]"
 			);
 		}
-	} else if (currentMode === null) {
+	} else if (currentMode === null & instructions != block) {
 		alert(
 			"Please select a game mode first. [testing Mode: " + currentMode + "]"
 		);
