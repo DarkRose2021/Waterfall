@@ -25,19 +25,19 @@ let currentMode = null;
 
 function removeObjects(pileId, count) {
   const gamePage = document.getElementById("game-page");
-  const instructions = document.getElementById("instructions");
   if (currentMode != null && gamePage.style.display === "block") {
     const pile = piles[pileId];
     if (pile >= count) {
       piles[pileId] -= count;
-      updateBoard();
+    //   updateBoard();
       currentPlayer = currentPlayer === 1 ? 2 : 1;
-      checkGameOver();
+    //   checkGameOver();
     } else {
-      alert("Invalid move! Please select a valid number of objects to remove. [testing Mode: "+ currentMode+"]");
+    //   alert("Invalid move! Please select a valid number of objects to remove. [testing Mode: "+ currentMode+"]");
+        document.getElementById("error").innerHTML= "Invalid move! Please select a valid number of objects to remove. [testing Mode: "+ currentMode+"]"
     }
   } else if (currentMode === null) {
-    alert("Please select a game mode first. [testing Mode: "+ currentMode+"]");
+    // alert("Please select a game mode first. [testing Mode: "+ currentMode+"]");
   }
 //   } else {
 //     alert("Please click the 'Start Game' button to begin the game.");
@@ -65,17 +65,17 @@ function checkGameOver() {
   const totalObjects = Object.values(piles).reduce((a, b) => a + b, 0);
   if (totalObjects === 0) {
       alert(`Player ${currentPlayer} wins!`);
-      resetGame();
+    //   resetGame();
   }
 }
 
-function resetGame() {
-  for (const pileId in piles) {
-      piles[pileId] = initialPiles[pileId];
-  }
-  currentPlayer = 1;
-  updateBoard();
-}
+// function resetGame() {
+//   for (const pileId in piles) {
+//       piles[pileId] = initialPiles[pileId];
+//   }
+//   currentPlayer = 1;
+//   updateBoard();
+// }
 
 document.addEventListener("DOMContentLoaded", function() {
   const easyBtn = document.getElementById("easyBtn");
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
       board.style.display = "none";
     }
     document.querySelector(".board.easy").style.display = "flex";
-    resetGame();
+    // resetGame();
   });
   
   mediumBtn.addEventListener("click", function() {
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
       board.style.display = "none";
     }
     document.querySelector(".board.medium").style.display = "flex";
-    resetGame();
+    // resetGame();
   });
   
   hardBtn.addEventListener("click", function() {
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
       board.style.display = "none";
     }
     document.querySelector(".board.hard").style.display = "flex";
-    resetGame();
+    // resetGame();
   });
 
   const objects = document.getElementsByTagName("div");
