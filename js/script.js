@@ -25,7 +25,8 @@ let currentMode = null;
 
 function removeObjects(pileId, count) {
   const gamePage = document.getElementById("game-page");
-  if (currentMode !== null && gamePage.style.display === "block") {
+  const instructions = document.getElementById("instructions");
+  if (currentMode != null && gamePage.style.display === "block") {
     const pile = piles[pileId];
     if (pile >= count) {
       piles[pileId] -= count;
@@ -33,13 +34,14 @@ function removeObjects(pileId, count) {
       currentPlayer = currentPlayer === 1 ? 2 : 1;
       checkGameOver();
     } else {
-      alert("Invalid move! Please select a valid number of objects to remove.");
+      alert("Invalid move! Please select a valid number of objects to remove. [testing Mode: "+ currentMode+"]");
     }
   } else if (currentMode === null) {
-    alert("Please select a game mode first.");
-  } else {
-    alert("Please click the 'Start Game' button to begin the game.");
+    alert("Please select a game mode first. [testing Mode: "+ currentMode+"]");
   }
+//   } else {
+//     alert("Please click the 'Start Game' button to begin the game.");
+//   }
 }
 
 function updateBoard() {
